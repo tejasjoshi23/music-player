@@ -1,0 +1,411 @@
+
+{
+    "data": [
+      {
+        "id": 1,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:10:57.746Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:19:48.547Z",
+        "name": "Colors",
+        "artist": "William King",
+        "accent": "#331E00",
+        "cover": "4f718272-6b0e-42ee-92d0-805b783cb471",
+        "top_track": true,
+        "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/august-145937.mp3"
+      },
+      {
+        "id": 2,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:11:31.021Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:23:07.983Z",
+        "name": "August",
+        "artist": "Markotopa",
+        "accent": "#0A092F",
+        "cover": "e714a3b8-9ae0-4417-a2d1-6ece39ad5776",
+        "top_track": false,
+        "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/phoenix-97462.mp3"
+      },
+      {
+        "id": 3,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:12:09.978Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:20:42.673Z",
+        "name": "Fallen Leaves",
+        "artist": "Matt Dawson",
+        "accent": "#59123F",
+        "cover": "c296c57b-1a5a-45a7-80a7-3f60f990ed62",
+        "top_track": false,
+        "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/french-song-about-brittany-136020.mp3"
+      },
+      {
+        "id": 4,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:12:51.670Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:21:12.661Z",
+        "name": "November",
+        "artist": "Adam Smith",
+        "accent": "#0B565B",
+        "cover": "9fffafe9-9013-4846-8b5c-2b5dcbcd4b62",
+        "top_track": false,
+        "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/perfect-timing-by-saavane-sweet-funky-song-155314.mp3"
+      },
+      {
+        "id": 7,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:15:14.439Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:22:26.020Z",
+        "name": "Uplift",
+        "artist": "Tom Keen",
+        "accent": "#331A05",
+        "cover": "0083048f-5fd8-47fd-9013-6d340151b345",
+        "top_track": true,
+        "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/sunflowers-spring-and-summer-piano-music-14010.mp3"
+      },
+      {
+        "id": 8,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:15:44.766Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:22:48.401Z",
+        "name": "First Touch",
+        "artist": "William King",
+        "accent": "#332B05",
+        "cover": "bb7c91a1-a2cb-42ae-b9a9-dee679c8726e",
+        "top_track": true,
+        "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/illusion-feel-ambient-guitar-146100.mp3"
+      },
+      {
+        "id": 9,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:16:14.372Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2024-04-11T02:54:52.341Z",
+        "name": "Sunflowers",
+        "artist": "Sarah Taylor",
+        "accent": "#57001A",
+        "cover": "2d8f1cca-0e1b-416b-87ce-50ff50cdac4f",
+        "top_track": true,
+        "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/phoenix-97462.mp3"
+      },
+      {
+        "id": 10,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:16:38.957Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:23:26.359Z",
+        "name": "Illusion Feel",
+        "artist": "William King",
+        "accent": "#160D5E",
+        "cover": "c26001ae-c51a-43ba-b309-f1fae226ef40",
+        "top_track": true,
+        "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/great-is-thy-faithfulness-9449.mp3"
+      }
+    ]
+  }
+
+  import React, { useState, useEffect, useRef } from 'react';
+import '../css/Player.css';
+import VolumeControl from './MusicController/VolumeControl';
+import { PlayIcon, PauseIcon, PreviousIcon, NextIcon, ThreeDotsIcon, VolumeIcon, BackIcon } from '../assets/svgIcons';
+
+const Player = ({ currentSong, onNext, onPrevious, onPlayPause, isPlaying, onBack }) => {
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [progress, setProgress] = useState(0);
+  const [showVolumeControl, setShowVolumeControl] = useState(false);
+  const audioRef = useRef(null);
+
+  const handlePlayPause = () => {
+    const audio = audioRef.current;
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play().catch(error => {
+          console.error('Error trying to play audio:', error);
+        });
+      }
+      onPlayPause(); // Update playing state
+    }
+  };
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) {
+      const updateProgress = () => {
+        setCurrentTime(audio.currentTime);
+        setProgress((audio.currentTime / duration) * 100 || 0);
+      };
+
+      const handleLoadedMetadata = () => {
+        setDuration(audio.duration);
+      };
+
+      const handleEnded = () => {
+        onNext(); // Automatically go to next song when current ends
+      };
+
+      audio.addEventListener('timeupdate', updateProgress);
+      audio.addEventListener('loadedmetadata', handleLoadedMetadata);
+      audio.addEventListener('ended', handleEnded);
+
+      if (isPlaying) {
+        audio.play().catch(error => console.error('Error trying to play audio:', error));
+      } else {
+        audio.pause();
+      }
+
+      return () => {
+        audio.removeEventListener('timeupdate', updateProgress);
+        audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
+        audio.removeEventListener('ended', handleEnded);
+      };
+    }
+  }, [duration, isPlaying, onNext]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio && currentSong) {
+      audio.src = currentSong.url;
+      audio.load(); // Load the new source
+
+      // Start from the beginning for a new song
+      if (isPlaying) {
+        audio.play().catch(error => {
+          console.error('Error trying to play audio:', error);
+        });
+      }
+      setCurrentTime(0);
+      setProgress(0);
+    }
+  }, [currentSong]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.code === 'Space') {
+        event.preventDefault();
+        handlePlayPause();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handlePlayPause]);
+
+  const handleProgressChange = (event) => {
+    const newTime = (event.target.value / 100) * duration;
+    setCurrentTime(newTime);
+    setProgress(event.target.value);
+    if (audioRef.current) {
+      audioRef.current.currentTime = newTime;
+    }
+  };
+
+  const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+  };
+
+  return (
+    <div className="now-playing">
+      <button className="back-button" onClick={onBack}>
+        <BackIcon />
+      </button>
+      <p className='song-name'>{currentSong?.name}</p>
+      <p className='artist-name'>{currentSong?.artist}</p>
+      <img src={`https://cms.samespace.com/assets/${currentSong?.cover}`} alt="cover" className="song-image" />
+      <audio ref={audioRef} volume={0.5} />
+      <div className="progress-bar">
+        <span>{formatTime(currentTime)}</span>
+        <div className="progress-bar-container">
+          <div
+            className="progress-bar-filled"
+            style={{ width: `${progress}%` }}
+          />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={progress || 0}
+            onChange={handleProgressChange}
+            className="slider"
+          />
+        </div>
+        <span>{formatTime(duration)}</span>
+      </div>
+      <div className="controls">
+        <div className="dots">
+          <button className="dots"><ThreeDotsIcon /></button>
+        </div>
+        <div className="playback-controls">
+          <button onClick={onPrevious}><PreviousIcon /></button>
+          <button onClick={handlePlayPause}>
+            {isPlaying ? <PauseIcon /> : <PlayIcon />}
+          </button>
+          <button onClick={onNext}><NextIcon /></button>
+        </div>
+        <div className="volume-control">
+          <button onClick={() => setShowVolumeControl(!showVolumeControl)}><VolumeIcon /></button>
+          {showVolumeControl && <VolumeControl audioRef={audioRef} />}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Player;
+
+
+
+  
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './App.css';
+import SearchBar from './components/SearchBar';
+import Logo from './components/Logo';
+import UserSection from './components/UserSection';
+import ControlButtons from './components/ControlButtons';
+import SongList from './components/SongList';
+import Player from './components/Player';
+import { getDominantColor } from './utils/ColorUtils';
+
+const App = () => {
+  const [songs, setSongs] = useState([]);
+  const [filteredSongs, setFilteredSongs] = useState([]);
+  const [currentSong, setCurrentSong] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [filter, setFilter] = useState('foryou');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [bgGradient, setBgGradient] = useState('linear-gradient(#181818, #181818)');
+  const [searchBarGradient, setSearchBarGradient] = useState('linear-gradient(black, grey)');
+  const [isMobileView, setIsMobileView] = useState(false);
+  const [selectedSongId, setSelectedSongId] = useState(null);
+
+  useEffect(() => {
+    axios.get('https://cms.samespace.com/items/songs')
+      .then(response => {
+        const songsWithImageUrls = response.data.data.map(song => ({
+          ...song,
+          coverUrl: `https://cms.samespace.com/assets/${song.cover}`,
+        }));
+        setSongs(songsWithImageUrls);
+        setFilteredSongs(songsWithImageUrls);
+      })
+      .catch(error => console.error('Error fetching songs:', error));
+  }, []);
+
+  useEffect(() => {
+    const filtered = filter === 'top_tracks'
+      ? songs.filter(song => song.top_track)
+      : songs;
+    setFilteredSongs(filtered);
+  }, [filter, songs]);
+
+  useEffect(() => {
+    if (currentSong) {
+      getDominantColor(currentSong.coverUrl, gradient => {
+        setBgGradient(gradient);
+        setSearchBarGradient(gradient);
+      });
+    }
+  }, [currentSong]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handlePlayPause = () => {
+    setIsPlaying(prevIsPlaying => !prevIsPlaying);
+  };
+
+  const handleSongSelect = (song) => {
+    setCurrentSong(song);
+    setIsPlaying(true);
+    setSelectedSongId(song.id);
+  };
+
+  const handlePrevious = () => {
+    const currentIndex = filteredSongs.findIndex(song => song.id === currentSong.id);
+    const previousSong = filteredSongs[currentIndex - 1] || filteredSongs[filteredSongs.length - 1];
+    handleSongSelect(previousSong);
+  };
+
+  const handleNext = () => {
+    const currentIndex = filteredSongs.findIndex(song => song.id === currentSong.id);
+    const nextSong = filteredSongs[currentIndex + 1] || filteredSongs[0];
+    handleSongSelect(nextSong);
+  };
+
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
+
+  const filteredSongsList = filteredSongs.filter(song =>
+    song.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    song.artist.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  return (
+    <div className="app">
+      <div className="left-section">
+        <Logo />
+        <UserSection />
+      </div>
+      {(!isMobileView || !currentSong) && (
+        <div className="center-section">
+          <ControlButtons onForYou={() => setFilter('foryou')} onTopTracks={() => setFilter('top_tracks')} />
+          <SearchBar onSearch={handleSearch} style={{ background: searchBarGradient }} />
+          <SongList songs={filteredSongsList} onSongSelect={handleSongSelect} selectedSongId={selectedSongId} />
+        </div>
+      )}
+      {currentSong && (
+        <div className={`right-section ${isMobileView ? 'mobile-view' : ''}`}>
+          <Player
+            currentSong={currentSong}
+            onNext={handleNext}
+            onPrevious={handlePrevious}
+            onPlayPause={handlePlayPause}
+            isPlaying={isPlaying}
+            onBack={() => {
+              setCurrentSong(null);
+              setSelectedSongId(null);
+            }}
+          />
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default App;

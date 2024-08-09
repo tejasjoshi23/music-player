@@ -19,7 +19,7 @@ const ButtonControls = ({ onPrevious, onPlayPause, onNext, isPlaying, onVolumeCl
 
   return (
     <div className="playback-controls">
-      <button onClick={null}><ThreeDotsIcon /></button>
+      <button className="three-dots"onClick={null}><ThreeDotsIcon /></button>
       <button onClick={onPrevious}><PreviousIcon /></button>
       <button onClick={onPlayPause}>{isPlaying ? <PauseIcon /> : <PlayIcon />}</button>
       <button onClick={onNext}><NextIcon /></button>

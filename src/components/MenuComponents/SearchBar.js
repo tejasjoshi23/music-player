@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../css/SearchBar.css";
 import { SearchIcon } from "../../assets/svgIcons";
 
-const SearchBar = ({ onSearch, style }) => {
+const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
   const handleSearch = (e) => {
@@ -22,9 +22,9 @@ const SearchBar = ({ onSearch, style }) => {
         onChange={handleSearch}
         className="search-bar"
       />
-      <span className="search-icon">
+      <div className="search-icon">
         <SearchIcon />
-      </span>
+      </div>
     </div>
   );
 };

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 .playback-controls {
   display: flex;
   align-items: center;
@@ -16,4 +17,9 @@
   font-size: 20px;
   cursor: pointer;
   margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .three-dots {
+  }
 }

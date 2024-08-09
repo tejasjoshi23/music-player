@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/Logo.css";
+import "../../css/DashboardComponents/Logo.css";
 
 import { SpotifyLogo } from "../../assets/svgIcons";
 const Logo = () => (

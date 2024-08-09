@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import axios from "axios";
 import "./App.css";
-import SearchBar from "./components/MenuComponents/SearchBar";
-import ControlButtons from "./components/MenuComponents/ControlButtons";
-import Logo from "./components/DashboardComponents/Logo";
-import UserSection from "./components/DashboardComponents/UserSection";
-import SongList from "./components/SongList";
-import Player from "./components/Player";
+import Loader from "./utils/Loader";
 
+// Lazy load components
 import { getDominantColor } from "./utils/ColorUtils";
+const SearchBar = lazy(() => import("./components/MenuComponents/SearchBar"));
+const ControlButtons = lazy(() => import("./components/MenuComponents/ControlButtons"));
+const Logo = lazy(() => import("./components/DashboardComponents/Logo"));
+const UserSection = lazy(() => import("./components/DashboardComponents/UserSection"));
+const SongList = lazy(() => import("./components/SongList"));
+const Player = lazy(() => import("./components/Player"));
+
 const App = () => {
   const [songs, setSongs] = useState([]);
   const [filteredSongs, setFilteredSongs] = useState([]);
@@ -16,15 +19,11 @@ const App = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [filter, setFilter] = useState("foryou");
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedSongId, setSelectedSongId] = useState(null);
   const [bgGradient, setBgGradient] = useState(
     "linear-gradient(#181818, #181818)"
   );
-  const [searchBarGradient, setSearchBarGradient] = useState(
-    "linear-gradient(black, grey)"
-  );
-  const [isMobileView, setIsMobileView] = useState(false);
-  const [isRightSectionOpen, setIsRightSectionOpen] = useState(false);
-  const [selectedSongId, setSelectedSongId] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     axios
@@ -36,8 +35,12 @@ const App = () => {
         }));
         setSongs(songsWithImageUrls);
         setFilteredSongs(songsWithImageUrls);
+        setIsLoading(false);
       })
-      .catch((error) => console.error("Error fetching songs:", error));
+      .catch((error) => {
+        console.error("Error fetching songs:", error);
+        setIsLoading(false);
+      });
   }, []);
 
   useEffect(() => {
@@ -50,37 +53,18 @@ const App = () => {
     if (currentSong) {
       getDominantColor(currentSong.coverUrl, (gradient) => {
         setBgGradient(gradient);
-        setSearchBarGradient(gradient);
       });
     }
   }, [currentSong]);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768);
-      if (window.innerWidth > 768) {
-        setIsRightSectionOpen(false);
-      }
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const handlePlayPause = () => {
     setIsPlaying((prevIsPlaying) => !prevIsPlaying);
-    if (isMobileView) {
-      setIsRightSectionOpen(true);
-    }
   };
 
   const handleSongSelect = (song) => {
     setCurrentSong(song);
     setIsPlaying(true);
     setSelectedSongId(song.id);
-    if (isMobileView) {
-      setIsRightSectionOpen(true);
-    }
   };
 
   const handlePrevious = () => {
@@ -105,62 +89,49 @@ const App = () => {
     setSearchQuery(query);
   };
 
-  const handleGoBack = () => {
-    setIsRightSectionOpen(false);
-  };
-
   const filteredSongsList = filteredSongs.filter(
     (song) =>
       song.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       song.artist.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
     <div className="app" style={{ background: bgGradient }}>
-      <button
-        className="menu-button"
-        onClick={() => setIsRightSectionOpen(false)}
-      >
-        Menu
-      </button>
-      {!isRightSectionOpen && (
-        <>
-          <div className="left-section">
-            <Logo />
-            <UserSection />
-          </div>
-          <div className="center-section">
-            <ControlButtons
-              onForYou={() => setFilter("foryou")}
-              onTopTracks={() => setFilter("top_tracks")}
-            />
-            <SearchBar
-              onSearch={handleSearch}
-              style={{ background: searchBarGradient }}
-            />
-            <SongList
-              songs={filteredSongsList}
-              onSongSelect={handleSongSelect}
-              selectedSongId={selectedSongId}
-            />
-          </div>
-        </>
-      )}
-      {currentSong && (
-        <div
-          className={`right-section ${isRightSectionOpen ? "mobile-view" : ""}`}
-        >
-          <button className="back-button" onClick={handleGoBack}>
-            Go Back
-          </button>
-          <Player
-            currentSong={currentSong}
-            onNext={handleNext}
-            onPrevious={handlePrevious}
-            onPlayPause={handlePlayPause}
-            isPlaying={isPlaying}
-            onBack={handleGoBack}
+      <div className="left-section">
+        <Suspense fallback={<Loader />}>
+          <Logo />
+          <UserSection />
+        </Suspense>
+      </div>
+      <div className="center-section">
+        <Suspense fallback={<Loader />}>
+          <ControlButtons
+            onForYou={() => setFilter("foryou")}
+            onTopTracks={() => setFilter("top_tracks")}
           />
+          <SearchBar onSearch={handleSearch} />
+          <SongList
+            songs={filteredSongsList}
+            onSongSelect={handleSongSelect}
+            selectedSongId={selectedSongId}
+          />
+        </Suspense>
+      </div>
+      {currentSong && (
+        <div className="right-section">
+          <Suspense fallback={<Loader />}>
+            <Player
+              currentSong={currentSong}
+              onNext={handleNext}
+              onPrevious={handlePrevious}
+              onPlayPause={handlePlayPause}
+              isPlaying={isPlaying}
+            />
+          </Suspense>
         </div>
       )}
     </div>

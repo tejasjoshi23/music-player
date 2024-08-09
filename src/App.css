@@ -1,4 +1,11 @@
-/* App.css */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #181818; /* Match the initial background color */
+}
+
 .app {
   display: flex;
   height: 100vh;
@@ -48,38 +55,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.right-section .back-button {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .left-section,
-  .center-section {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
-  .right-section.mobile-view {
-    width: 100%;
-  }
-  .right-section {
-    width: 100%;
-  }
-  .right-section .back-button {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000;
-  }
 }
 
 .song-list {

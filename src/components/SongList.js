@@ -4,6 +4,7 @@ import defaultCover from "../assets/music-img.png";
 
 const SongList = ({ songs, onSongSelect, selectedSongId }) => {
   const [songDurations, setSongDurations] = useState({});
+  const [imageLoaded, setImageLoaded] = useState({});
 
   useEffect(() => {
     const audioElements = {};
@@ -45,6 +46,14 @@ const SongList = ({ songs, onSongSelect, selectedSongId }) => {
     return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
   };
 
+  const handleImageLoad = (songId) => {
+    setImageLoaded((prev) => ({ ...prev, [songId]: true }));
+  };
+
+  const handleImageError = (e) => {
+    e.target.src = defaultCover;
+  };
+
   return (
     <div className="song-list">
       {songs.map((song) => (
@@ -59,8 +68,18 @@ const SongList = ({ songs, onSongSelect, selectedSongId }) => {
             src={`https://cms.samespace.com/assets/${song.cover}`}
             alt="cover"
             className="song-cover"
-            onError={(e) => (e.target.src = defaultCover)}
+            onLoad={() => handleImageLoad(song.id)}
+            onError={handleImageError}
+            style={{ display: imageLoaded[song.id] ? "block" : "none" }}
           />
+          {!imageLoaded[song.id] && (
+            <img
+              src={defaultCover}
+              alt="default cover"
+              className="song-cover"
+              style={{ display: "block" }}
+            />
+          )}
           <div className="song-info">
             <div className="song-title">{song.name}</div>
             <div className="song-artist">{song.artist}</div>

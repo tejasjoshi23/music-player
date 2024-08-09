@@ -11,7 +11,6 @@ const Player = ({
   onPrevious,
   onPlayPause,
   isPlaying,
-  onBack,
 }) => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -108,8 +107,7 @@ const Player = ({
 
   return (
     <div className="now-playing">
-      <button className="back-button" onClick={onBack}></button>
-      <SongDetails song={currentSong} />
+       <SongDetails song={currentSong} />
       <audio ref={audioRef} volume={volume} />
 
       <ProgressBar

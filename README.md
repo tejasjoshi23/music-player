@@ -1,74 +1,79 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Music Player App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A interactive, simple and responsive music player built with ReactJS, providing a sleek interface to browse, search, and play music. The app features a dynamic background that adapts to the currently playing song, ensuring an immersive user experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dynamic Background Gradient:** The background gradient color changes based on the cover image of the current song.
+- **Responsive Design:** The layout adapts to different screen sizes, with specific behavior for mobile views.
+- **Music Controls:** Play, pause, skip to the next song, or go back to the previous one.
+- **Search Functionality:** Search for songs or artists directly from the search bar.
+- **Tabs:** Switch between "For You" and "Top Tracks" to filter songs.
+- **Seamless Playback:** Music continues to play even if the user navigates to another tab.
 
-### `npm start`
+## Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **App:** The main component that manages the state and layout of the app.
+- **SearchBar:** Provides a search input field to search for songs or artists.
+- **ControlButtons:** Toggle between "For You" and "Top Tracks" filters.
+- **Logo:** Displays the Spotify logo.
+- **UserSection:** Displays user information.
+- **SongList:** Renders a list of songs that can be selected to play.
+- **Player:** Controls the playback of the selected song, including play/pause, next, and previous functions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/your-username/music-player.git
+    cd music-player
+    ```
 
-### `npm run build`
+2. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+4. The app will be available at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Browse Songs:** Use the "For You" and "Top Tracks" buttons to filter songs.
+- **Search Songs:** Enter a song or artist name in the search bar to filter the song list.
+- **Select a Song:** Click on any song in the list to start playing it.
+- **Control Playback:** Use the play/pause, next, and previous buttons in the player to control playback.
+- **Mobile View:** On mobile, the player will expand to full screen when a song is selected, with an option to return to the song list.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app fetches songs from the following API:
 
-## Learn More
+- **Endpoint:** `https://cms.samespace.com/items/songs`
+- **Cover Images:** Fetched using the `cover` key from the API response.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Responsive Design
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Desktop View:** Displays the logo, user section, filter buttons, search bar, and song list on the left and center sections. The player appears on the right when a song is selected.
+- **Mobile View:** On smaller screens, the app initially shows the left and center sections. When a song is selected, the player expands to full screen, hiding the other sections. A "Go Back" button allows returning to the song list.
 
-### Code Splitting
+## Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Background Gradient:** The gradient adapts to the dominant color in the song's cover image.
+  
+## Future Enhancements
 
-### Analyzing the Bundle Size
+- **Volume Control:** A vertical slider for controlling volume with mute/unmute functionality.
+- **Song Duration:** Display the actual duration of each song with a dynamic progress bar.
+- **Animations:** Add fluid and interactive animations/transitions for UI elements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# music-player
->>>>>>> 9baa1ae6142b1facb584e908dff110f263eccbe0
+Contributions are welcome! Feel free to open an issue or submit a pull request.

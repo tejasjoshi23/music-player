@@ -93,7 +93,7 @@
 .menu-btn {
   display: none;
 }
-
+/* 
 @media (max-width: 1159px) {
   .left-section {
     display: none;
@@ -129,7 +129,7 @@
     transform: scale(0.9);
     transition: 2s ease-in-out;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .menu-btn {

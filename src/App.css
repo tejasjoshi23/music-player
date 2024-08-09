@@ -152,7 +152,8 @@
   
   .center-section {
     margin-top: 60px;
-    padding-left: 10px;
+    margin-bottom: 60px;
+    padding: 10px;
     position: relative;
     display: flex;
     flex: 1;
